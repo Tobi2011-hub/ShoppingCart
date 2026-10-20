@@ -3,5 +3,6 @@ import { defineConfig } from 'vite'
 
 // Enable React's JSX transform and development-time Fast Refresh through Vite.
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS === 'true' ? '/ShoppingCart/' : '/',
   plugins: [react()],
 })

@@ -10,7 +10,7 @@ import './App.css'
 // Shared site chrome surrounds the route selected by the current URL.
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app-shell">
         <Navbar />
         <Routes>
